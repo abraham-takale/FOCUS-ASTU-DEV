@@ -1,6 +1,6 @@
 <style>
   .out {
-    background-color: white;
+    background-color: black;
     height: 45;
     width: 100;
     border-style: solid;
@@ -8,9 +8,22 @@
       background-color: rgb(46, 164, 79);
       font-size: bold;
       padding: 8px 16px;
-      border-radius: 10;
+      border-radius: 16px;
       cursor: pointer;
     }
+  }
+  .out:hover {
+    background-color: blue;
+    box-shadow: 10px 10px 8px red;
+    color: red;
+    transition: box-shadow 1s;
+  }
+  .out:active {
+    background-color: brown;
+  }
+  .span:active {
+    background-color: red;
+    color: black;
   }
 </style>
 <button class="out">
